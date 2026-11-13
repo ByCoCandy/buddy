@@ -11,10 +11,10 @@
 1. 打开 Poly Haven 资源页面：**[Pergola Walkway HDRI • Poly Haven](https://polyhaven.com/zh/a/pergola_walkway)**
 2. 选择规格 **`4K`** + 格式 **`EXR`** 点击下载（也可直接使用官方直链下载）：
    - 直链下载：<https://dl.polyhaven.org/file/ph-assets/HDRIs/exr/4k/pergola_walkway_4k.exr>
-3. 将下载好的文件放入当前 `model/textures/` 目录下，确保文件名保持为：
+3. 将下载好的文件放入当前 `Model/textures/` 目录下，确保文件名保持为：
 
 ```text
-model/
+Model/
 ├── model-blender-res.blend
 └── textures/
     ├── 8d1633a87402a765b459fc35e493106d.png

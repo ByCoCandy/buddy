@@ -6,8 +6,8 @@ Copyright (c) 2026 CoCandy (https://github.com/ByCoCandy)
 ================================================================================
 
 1. 硬件、3D 结构模型与文档（适用 CC BY-NC-SA 4.0 协议 + 官方固件生态售卖豁免）
-   本仓库公开的电路原理图、PCB 设计与制板文件（Gerber）、3D 机身外壳结构模型
-   （包括但不限于 .blend / .3dm / .stp / .stl 文件）及相关图文说明文档，默认采用
+   本仓库公开的电路原理图、PCB 工程与制板文件（.epro2 / Gerber）、3D 机身外壳结构模型
+   （包括但不限于 .stp / .3dm / .blend 文件）及相关图文说明文档，默认采用
    《知识共享 署名-非商业性使用-相同方式共享 4.0 国际公共许可协议》
    （Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International，
    简称 CC BY-NC-SA 4.0）进行授权：
@@ -20,7 +20,7 @@ Copyright (c) 2026 CoCandy (https://github.com/ByCoCandy)
          3D 打印外壳配件以及组装成品，前提是商品页面须醒目标注原作者署名（BUDDY · CoCandy）：
          - 组装成品须烧录未经篡改的 CoCandy 官方正版固件，并通过官方平台
            （https://store.cocandy.com.cn / https://home.cocandy.com.cn）完成单机正版激活后交付；
-         - DIY 散件物料包与外壳配件须如实向买家说明：官方配套固件需单机购买激活码解锁完整功能
+         - DIY 散件物料包与外壳配件须如实向买家说明：官方配套固件需按单机购买激活码解锁完整功能
            （或由买家基于公开引脚自行编写开源固件），以免造成买家误解；
      (c) 【严禁搭载其他固件商售本项目设计】：未经版权方事先书面许可，严禁将本项目的 3D 外壳模型、
          PCB 设计或其修改衍生品预装、搭配或引导刷入任何非官方固件（第三方固件或自改固件）进行商业售卖
@@ -37,9 +37,9 @@ Copyright (c) 2026 CoCandy (https://github.com/ByCoCandy)
    BUDDY 配套的设备固件（合并烧录固件 .bin 与无线 OTA 固件）以及 CoCandy 在线网页服务
    （https://cocandy.com.cn 、https://home.cocandy.com.cn 、https://store.cocandy.com.cn 等）
    闭源并保留全部权利，不适用下述 CC BY-NC-SA 4.0 开源协议。
-   官方烧录页免费开放 USB 在线刷机与装机硬件自检功能；解锁完整设备系统与在线网页端功能需按单机
-   在官方商店获取激活授权并绑定硬件 ID（一机一码永久有效，同一芯片重刷固件无需重复购买，且包含
-   后续无线 OTA 更新）。严禁对固件进行反编译、逆向工程、破解篡改或绕过官方激活机制。
+   官方烧录页免费开放 USB 在线刷机与 5 秒装机硬件自检功能；解锁完整设备系统与在线网页端功能采用单机激活制
+   （第 1 台起按单机在官方商店购买激活码并绑定芯片硬件 ID，一机一码永久有效，同一芯片重刷固件无需重复购买，
+   且包含后续无线 OTA 更新）。严禁对固件进行反编译、逆向工程、破解篡改或绕过官方激活机制。
 
 3. 第三方资源说明
    Model/textures/pergola_walkway.md 中引用的外部环境光贴图资源来自 Poly Haven，
@@ -50,9 +50,9 @@ II. Scope Summary (English)
 ================================================================================
 
 1. Open-Source Hardware, 3D Models & Documentation (CC BY-NC-SA 4.0 + Official Ecosystem Exemption)
-   All schematics, PCB layouts, Gerber fabrication files, 3D enclosure/accessory
-   models (.blend, .3dm, .stp, .stl), and documentation inside this repository are
-   licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+   All schematics, EasyEDA Pro PCB projects (.epro2), Gerber fabrication files,
+   3D enclosure/accessory models (.stp, .3dm, .blend), and documentation inside this
+   repository are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0
    International Public License (CC BY-NC-SA 4.0), subject to the following
    Official-Firmware Ecosystem Commercial Exemption:
 
@@ -75,11 +75,12 @@ II. Scope Summary (English)
 2. Precompiled Firmware & Web Services (Proprietary · Per-Device Activation)
    The precompiled device firmware (.bin / OTA images) and hosted CoCandy web
    services remain proprietary (All Rights Reserved) and are NOT covered by
-   CC BY-NC-SA 4.0. USB web flashing and hardware soldering self-test are provided
-   free of charge; unlocking full device features and web customization requires a
-   per-device license activation from the official store (bound permanently to chip
-   hardware ID, including future wireless OTA updates). Reverse engineering,
-   tampering, or bypassing activation mechanisms is strictly prohibited.
+   CC BY-NC-SA 4.0. USB web flashing and 5-second hardware soldering self-test are
+   provided free of charge; unlocking full device features and web customization
+   requires per-device license activation from the 1st unit via the official store
+   (1 code per device, bound permanently to chip hardware ID across reflashes,
+   including future wireless OTA updates). Reverse engineering, tampering, or
+   bypassing activation mechanisms is strictly prohibited.
 
 ================================================================================
 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
