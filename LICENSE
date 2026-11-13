@@ -17,10 +17,11 @@ Copyright (c) 2026 CoCandy (https://github.com/ByCoCandy)
    - 非商业性使用与【官方固件生态售卖特许豁免】：
      (a) 欢迎个人爱好者自由下载、DIY 复刻与非商业二创交流；
      (b) 【允许售卖成品与 DIY 散料包】：允许个人或第三方店铺售卖本项目的 DIY 散件物料包、
-         3D 打印外壳配件以及组装成品，前提是商品页面须醒目标注原作者署名（BUDDY · CoCandy），
-         且组装成品须烧录未经篡改的 CoCandy 官方正版固件并通过官方平台
-         （https://home.cocandy.com.cn / https://store.cocandy.com.cn）完成正规激活
-         （散件包须配套引导买家使用官方固件烧录平台）；
+         3D 打印外壳配件以及组装成品，前提是商品页面须醒目标注原作者署名（BUDDY · CoCandy）：
+         - 组装成品须烧录未经篡改的 CoCandy 官方正版固件，并通过官方平台
+           （https://store.cocandy.com.cn / https://home.cocandy.com.cn）完成单机正版激活后交付；
+         - DIY 散件物料包与外壳配件须如实向买家说明：官方配套固件需单机购买激活码解锁完整功能
+           （或由买家基于公开引脚自行编写开源固件），以免造成买家误解；
      (c) 【严禁搭载其他固件商售本项目设计】：未经版权方事先书面许可，严禁将本项目的 3D 外壳模型、
          PCB 设计或其修改衍生品预装、搭配或引导刷入任何非官方固件（第三方固件或自改固件）进行商业售卖
          （个人非商业自研固件自用或免费开源分享不受限制，但不得用于商业售卖）。
@@ -32,13 +33,13 @@ Copyright (c) 2026 CoCandy (https://github.com/ByCoCandy)
 
    其他深度商业合作或定制授权，请联系：hi@cocandy.com.cn
 
-2. 预编译固件与配套在线服务声明（闭源专有软件）
+2. 预编译固件与配套在线服务声明（闭源专有软件 · 单机激活）
    BUDDY 配套的设备固件（合并烧录固件 .bin 与无线 OTA 固件）以及 CoCandy 在线网页服务
    （https://cocandy.com.cn 、https://home.cocandy.com.cn 、https://store.cocandy.com.cn 等）
    闭源并保留全部权利，不适用下述 CC BY-NC-SA 4.0 开源协议。
-   个人 DIY 复刻者可在个人设备上按平台规则免费烧录、激活及 OTA 更新官方固件；超出个人免费额度
-   或用于成品售卖的批量激活，请遵循官方平台规则获取授权配额。严禁对固件进行反编译、逆向工程、
-   破解篡改或绕过官方激活机制。
+   官方烧录页免费开放 USB 在线刷机与装机硬件自检功能；解锁完整设备系统与在线网页端功能需按单机
+   在官方商店获取激活授权并绑定硬件 ID（一机一码永久有效，同一芯片重刷固件无需重复购买，且包含
+   后续无线 OTA 更新）。严禁对固件进行反编译、逆向工程、破解篡改或绕过官方激活机制。
 
 3. 第三方资源说明
    Model/textures/pergola_walkway.md 中引用的外部环境光贴图资源来自 Poly Haven，
@@ -58,11 +59,12 @@ II. Scope Summary (English)
    - DIY Kits & Official-Firmware Finished Units (Permitted): Makers and third-party
      sellers are permitted to sell DIY component kits, 3D-printed enclosures, and
      assembled BUDDY units, PROVIDED THAT listings visibly credit "BUDDY · CoCandy",
-     assembled units run unmodified official CoCandy firmware duly activated via
-     the official platform (https://home.cocandy.com.cn / https://store.cocandy.com.cn),
-     and DIY kits direct buyers to the official firmware flasher. Third-party sellers
-     assume sole responsibility for part quality, build workmanship, battery safety,
-     and after-sales warranty.
+     assembled units are delivered pre-activated with unmodified official CoCandy
+     firmware via the official platform (https://store.cocandy.com.cn /
+     https://home.cocandy.com.cn), and DIY kit listings clearly inform buyers that
+     official firmware requires per-device activation (or custom open-source firmware).
+     Third-party sellers assume sole responsibility for part quality, workmanship,
+     battery safety, and after-sales warranty.
    - Selling This Design with Non-Official Firmware (Prohibited): Commercial
      manufacturing or sale of this project's 3D enclosure, PCB design, or derivative
      hardware preloaded, bundled, or marketed with any third-party or modified
@@ -70,12 +72,13 @@ II. Scope Summary (English)
      (hi@cocandy.com.cn). Personal non-commercial custom firmware hacking and free
      open-source firmware sharing remain welcome.
 
-2. Precompiled Firmware & Web Services (Proprietary)
+2. Precompiled Firmware & Web Services (Proprietary · Per-Device Activation)
    The precompiled device firmware (.bin / OTA images) and hosted CoCandy web
    services remain proprietary (All Rights Reserved) and are NOT covered by
-   CC BY-NC-SA 4.0. Personal DIY builders may flash and activate personal units
-   for free within the platform's personal quota; commercial/bulk assembly
-   activations are subject to official platform terms. Reverse engineering,
+   CC BY-NC-SA 4.0. USB web flashing and hardware soldering self-test are provided
+   free of charge; unlocking full device features and web customization requires a
+   per-device license activation from the official store (bound permanently to chip
+   hardware ID, including future wireless OTA updates). Reverse engineering,
    tampering, or bypassing activation mechanisms is strictly prohibited.
 
 ================================================================================

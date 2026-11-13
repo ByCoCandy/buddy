@@ -35,8 +35,8 @@
 
 Instead of fine-pitch bare QFN chips and dozens of passives, the hardware uses a **custom 2-layer carrier PCB + off-the-shelf module stack**—totaling just **8 component types (9 parts in all)**, easily soldered with a standard soldering iron.
 
-- **Open-Source Hardware & Enclosure**: PCB design / Gerber files, 3D-printable shell models (`.stp` / `.3dm` / `.blend`), and documentation are released under `CC BY-NC-SA 4.0`.
-- **Companion Firmware & Web App**: Free precompiled firmware (closed-source) and a zero-install web app at **[home.cocandy.com.cn](https://home.cocandy.com.cn)** supporting 1-click USB flashing (`WebSerial`), live BLE face/LED customization (`WebBLE`), dogtag drawing, and wireless OTA updates.
+- **Open-Source Hardware & Enclosure**: PCB design / Gerber files, 3D-printable shell models (`.stp` / `.3dm` / `.blend`), GPIO pinout, and documentation are released under `CC BY-NC-SA 4.0` (you can also write your own free custom firmware using **[Bit-Eye-Lib](https://github.com/ByCoCandy/Bit-Eye-Lib)**).
+- **Companion Firmware & Web App**: Official precompiled firmware (closed-source) provides **free 1-click USB flashing & hardware soldering self-test** at **[home.cocandy.com.cn/flash](https://home.cocandy.com.cn/flash)**; unlocking the full pet system, live BLE customization (**[home.cocandy.com.cn](https://home.cocandy.com.cn)**), and lifetime wireless OTA updates requires a per-device activation ticket from **[store.cocandy.com.cn](https://store.cocandy.com.cn)** (permanently bound to chip hardware ID across reflashes).
 
 <div align="center">
   <img src="Image/f334dda793ec9986ff815157ac3c31d0.png" width="82%" />
@@ -215,7 +215,7 @@ Fabricate the 2-layer carrier PCB using the Gerber archive in this repository, a
 </div>
 
 1. **USB Web Flashing**: Open 👉 **[https://home.cocandy.com.cn/flash](https://home.cocandy.com.cn/flash)** in desktop `Chrome` / `Edge`. Plug a data cable into the **internal `ESP32-C3` Type-C port** (the outer `TP4056` port is charge-only; hold `BOOT` while plugging in if needed), select Buddy, and click flash.
-2. **5-Second Self-Test & Pairing**: On first boot, verify the buzzer and dual LEDs, then **hold the rear touch area for 5 seconds** as prompted on screen to complete hardware self-test. Open **[home.cocandy.com.cn](https://home.cocandy.com.cn)** to connect to `Buddy-XXXXXX` over Bluetooth.
+2. **5-Second Self-Test & Activation**: On first boot, verify the buzzer and dual LEDs for free, then **hold the rear touch area for 5 seconds** as prompted on screen to complete hardware self-test. Open **[home.cocandy.com.cn](https://home.cocandy.com.cn)** to connect to `Buddy-XXXXXX` over Bluetooth and bind a per-device activation ticket from **[store.cocandy.com.cn](https://store.cocandy.com.cn)** (permanently tied to chip hardware ID across reflashes).
 
 <table align="center" width="100%">
   <tr align="center">
@@ -265,8 +265,8 @@ Built a cool shell remix or custom firmware? Open an Issue or PR to share your r
 
 ### 📄 License & Commercial Sales Policy
 - **Base Open-Source License**: All PCB files, 3D enclosure models, and documentation in this repository are licensed under **[CC BY-NC-SA 4.0](LICENSE)** (*Attribution-NonCommercial-ShareAlike 4.0 International*) for personal DIY builds and non-commercial remixes.
-- **Kits & Finished-Unit Sales (Official Firmware Ecosystem Only)**: Makers and third-party shops **are permitted to sell DIY component kits, 3D-printed shells, and assembled BUDDY units** (listings must credit `BUDDY · CoCandy`, and assembled units must run unmodified official CoCandy firmware duly activated via the official platform). **Commercial sale of this project's enclosure, PCB design, or derivative hardware preloaded or bundled with any third-party/modified firmware is strictly prohibited.**
-- **Firmware & Warranty Notice**: The precompiled device firmware and hosted CoCandy web services remain proprietary (free for personal DIY builds within personal quota). Third-party sellers assume sole responsibility for kit parts, soldering quality, battery safety, and after-sales warranty; CoCandy provides online web app and firmware support only. See [LICENSE](LICENSE) for full terms.
+- **Kits & Finished-Unit Sales (Official Firmware Ecosystem Only)**: Makers and third-party shops **are permitted to sell DIY component kits, 3D-printed shells, and assembled BUDDY units** (listings must credit `BUDDY · CoCandy`; assembled units must be delivered pre-activated with unmodified official CoCandy firmware, and DIY kits must clearly inform buyers that official firmware requires per-device activation or custom open-source firmware). **Commercial sale of this project's enclosure, PCB design, or derivative hardware preloaded or bundled with any third-party/modified firmware is strictly prohibited.**
+- **Firmware Activation & Warranty Notice**: The precompiled device firmware and hosted CoCandy web services remain proprietary (free USB flashing & hardware self-test; per-device activation unlocks full system & lifetime wireless OTA updates). Third-party sellers assume sole responsibility for kit parts, soldering quality, battery safety, and after-sales warranty; CoCandy provides online web app and firmware support only. See [LICENSE](LICENSE) for full terms.
 
 ---
 
