@@ -5,29 +5,40 @@ Copyright (c) 2026 CoCandy (https://github.com/ByCoCandy)
 一、授权范围说明（中文摘要，法律效力以英文协议全文为准）
 ================================================================================
 
-1. 硬件、3D 结构模型与文档（适用 CC BY-NC-SA 4.0 协议）
+1. 硬件、3D 结构模型与文档（适用 CC BY-NC-SA 4.0 协议 + 官方固件生态售卖豁免）
    本仓库公开的电路原理图、PCB 设计与制板文件（Gerber）、3D 机身外壳结构模型
-   （包括但不限于 .blend / .3dm / .stp / .stl 文件）及相关图文说明文档，均采用
+   （包括但不限于 .blend / .3dm / .stp / .stl 文件）及相关图文说明文档，默认采用
    《知识共享 署名-非商业性使用-相同方式共享 4.0 国际公共许可协议》
    （Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International，
    简称 CC BY-NC-SA 4.0）进行授权：
 
-   - 署名（Attribution）：再分发、展示或发布衍生修改作品时，须保留原作者署名
-     （CoCandy / ByCoCandy）及本仓库原始链接，并说明是否做过修改。
-   - 非商业性使用（NonCommercial）：欢迎个人爱好者自由下载、DIY 复刻与二创交流；
-     未经版权方事先书面许可，严禁将本项目的设计、PCB、3D 模型或其修改衍生品用于
-     任何商业目的（包括但不限于售卖成品整机、DIY 散件套料、3D 打印外壳配件或有偿代工）。
+   - 署名（Attribution）：再分发、展示、售卖合规成品/散件或发布衍生修改作品时，须保留原作者署名
+     （BUDDY / CoCandy / ByCoCandy）及原始项目链接。
+   - 非商业性使用与【官方固件生态售卖特许豁免】：
+     (a) 欢迎个人爱好者自由下载、DIY 复刻与非商业二创交流；
+     (b) 【允许售卖成品与 DIY 散料包】：允许个人或第三方店铺售卖本项目的 DIY 散件物料包、
+         3D 打印外壳配件以及组装成品，前提是商品页面须醒目标注原作者署名（BUDDY · CoCandy），
+         且组装成品须烧录未经篡改的 CoCandy 官方正版固件并通过官方平台
+         （https://home.cocandy.com.cn / https://store.cocandy.com.cn）完成正规激活
+         （散件包须配套引导买家使用官方固件烧录平台）；
+     (c) 【严禁搭载其他固件商售本项目设计】：未经版权方事先书面许可，严禁将本项目的 3D 外壳模型、
+         PCB 设计或其修改衍生品预装、搭配或引导刷入任何非官方固件（第三方固件或自改固件）进行商业售卖
+         （个人非商业自研固件自用或免费开源分享不受限制，但不得用于商业售卖）。
    - 相同方式共享（ShareAlike）：若对本项目的硬件或结构模型进行了修改、二创并公开发布，
      衍生作品必须以相同的 CC BY-NC-SA 4.0 协议开源共享。
+   - 第三方售卖免责声明：非官方直营渠道售出的散件物料包、打印件或组装成品，其元器件品质、
+     硬件焊接做工、锂电池安全及退换货售后服务均由对应卖家独立承担，CoCandy 官方仅提供在线网页端
+     与官方固件支持。
 
-   如需商业合作或商业授权，请联系：hi@cocandy.com.cn
+   其他深度商业合作或定制授权，请联系：hi@cocandy.com.cn
 
-2. 预编译固件与配套在线服务声明（闭源免费授权个人使用）
+2. 预编译固件与配套在线服务声明（闭源专有软件）
    BUDDY 配套的设备固件（合并烧录固件 .bin 与无线 OTA 固件）以及 CoCandy 在线网页服务
-   （https://cocandy.com.cn 、https://home.cocandy.com.cn 等）闭源并保留全部权利，
-   不适用下述 CC BY-NC-SA 4.0 开源协议。
-   版权方免费授权个人 DIY 复刻者在自行制作的个人非商业设备上烧录、OTA 更新及日常使用该固件；
-   严禁对固件进行反编译、逆向工程、破解篡改、单独二次分发或捆绑任何商业硬件销售。
+   （https://cocandy.com.cn 、https://home.cocandy.com.cn 、https://store.cocandy.com.cn 等）
+   闭源并保留全部权利，不适用下述 CC BY-NC-SA 4.0 开源协议。
+   个人 DIY 复刻者可在个人设备上按平台规则免费烧录、激活及 OTA 更新官方固件；超出个人免费额度
+   或用于成品售卖的批量激活，请遵循官方平台规则获取授权配额。严禁对固件进行反编译、逆向工程、
+   破解篡改或绕过官方激活机制。
 
 3. 第三方资源说明
    Model/textures/pergola_walkway.md 中引用的外部环境光贴图资源来自 Poly Haven，
@@ -37,21 +48,35 @@ Copyright (c) 2026 CoCandy (https://github.com/ByCoCandy)
 II. Scope Summary (English)
 ================================================================================
 
-1. Open-Source Hardware, 3D Models & Documentation (CC BY-NC-SA 4.0)
+1. Open-Source Hardware, 3D Models & Documentation (CC BY-NC-SA 4.0 + Official Ecosystem Exemption)
    All schematics, PCB layouts, Gerber fabrication files, 3D enclosure/accessory
    models (.blend, .3dm, .stp, .stl), and documentation inside this repository are
    licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0
-   International Public License (CC BY-NC-SA 4.0). Commercial manufacturing, kit
-   sales, or commercial sale of 3D-printed parts without prior written permission
-   from CoCandy (hi@cocandy.com.cn) is strictly prohibited.
+   International Public License (CC BY-NC-SA 4.0), subject to the following
+   Official-Firmware Ecosystem Commercial Exemption:
 
-2. Precompiled Firmware & Web Services (Proprietary, Free for Personal DIY Use)
+   - DIY Kits & Official-Firmware Finished Units (Permitted): Makers and third-party
+     sellers are permitted to sell DIY component kits, 3D-printed enclosures, and
+     assembled BUDDY units, PROVIDED THAT listings visibly credit "BUDDY · CoCandy",
+     assembled units run unmodified official CoCandy firmware duly activated via
+     the official platform (https://home.cocandy.com.cn / https://store.cocandy.com.cn),
+     and DIY kits direct buyers to the official firmware flasher. Third-party sellers
+     assume sole responsibility for part quality, build workmanship, battery safety,
+     and after-sales warranty.
+   - Selling This Design with Non-Official Firmware (Prohibited): Commercial
+     manufacturing or sale of this project's 3D enclosure, PCB design, or derivative
+     hardware preloaded, bundled, or marketed with any third-party or modified
+     firmware is strictly prohibited without prior written permission from CoCandy
+     (hi@cocandy.com.cn). Personal non-commercial custom firmware hacking and free
+     open-source firmware sharing remain welcome.
+
+2. Precompiled Firmware & Web Services (Proprietary)
    The precompiled device firmware (.bin / OTA images) and hosted CoCandy web
-   applications remain proprietary (All Rights Reserved) and are NOT covered by
-   CC BY-NC-SA 4.0. Personal makers are granted a free, non-exclusive,
-   non-commercial license to flash and update the official firmware on their
-   self-built personal devices. Reverse engineering, modification, redistribution,
-   or bundling with commercial hardware is prohibited.
+   services remain proprietary (All Rights Reserved) and are NOT covered by
+   CC BY-NC-SA 4.0. Personal DIY builders may flash and activate personal units
+   for free within the platform's personal quota; commercial/bulk assembly
+   activations are subject to official platform terms. Reverse engineering,
+   tampering, or bypassing activation mechanisms is strictly prohibited.
 
 ================================================================================
 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International

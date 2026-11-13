@@ -263,9 +263,10 @@ Built a cool shell remix or custom firmware? Open an Issue or PR to share your r
 - **🐛 Issues & Ideas**: Found a hardware/model quirk or have a feature idea? Open an **[Issue](https://github.com/ByCoCandy/buddy/issues)**.
 - **⭐ Support**: If you enjoy this little project, consider giving the repo a **Star ⭐**!
 
-### 📄 License
-- All PCB files, 3D enclosure models, and documentation in this repository are licensed under **[CC BY-NC-SA 4.0](LICENSE)** (*Attribution-NonCommercial-ShareAlike 4.0 International*). Personal DIY builds and non-commercial remixes under the same license are welcome; **unauthorized commercial manufacturing or sale is prohibited**.
-- The precompiled device firmware and hosted CoCandy web services remain proprietary (All Rights Reserved) and are provided free of charge for personal, non-commercial DIY builds. See [LICENSE](LICENSE) for full details.
+### 📄 License & Commercial Sales Policy
+- **Base Open-Source License**: All PCB files, 3D enclosure models, and documentation in this repository are licensed under **[CC BY-NC-SA 4.0](LICENSE)** (*Attribution-NonCommercial-ShareAlike 4.0 International*) for personal DIY builds and non-commercial remixes.
+- **Kits & Finished-Unit Sales (Official Firmware Ecosystem Only)**: Makers and third-party shops **are permitted to sell DIY component kits, 3D-printed shells, and assembled BUDDY units** (listings must credit `BUDDY · CoCandy`, and assembled units must run unmodified official CoCandy firmware duly activated via the official platform). **Commercial sale of this project's enclosure, PCB design, or derivative hardware preloaded or bundled with any third-party/modified firmware is strictly prohibited.**
+- **Firmware & Warranty Notice**: The precompiled device firmware and hosted CoCandy web services remain proprietary (free for personal DIY builds within personal quota). Third-party sellers assume sole responsibility for kit parts, soldering quality, battery safety, and after-sales warranty; CoCandy provides online web app and firmware support only. See [LICENSE](LICENSE) for full terms.
 
 ---
 
